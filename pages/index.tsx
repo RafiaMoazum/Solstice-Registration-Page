@@ -23,9 +23,10 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           content="Tempor nostrud velit fugiat nostrud duis incididunt Lorem deserunt est tempor aute dolor ad elit."
         />
       </Head>
-      <HomepageWrapper>
+      <Hero />
+
+      {/* <HomepageWrapper>
         <WhiteBackgroundContainer>
-          <Hero />
           <Partners />
           <BasicSection imageUrl="/demo-illustration-1.svg" title="Lorem ipsum dolor sit amet consectetur." overTitle="sit amet gogo">
             <p>
@@ -55,7 +56,7 @@ export default function Homepage({ posts }: InferGetStaticPropsType<typeof getSt
           <Testimonials />
           <ScrollableBlogPosts posts={posts} />
         </DarkerBackgroundContainer>
-      </HomepageWrapper>
+      </HomepageWrapper> */}
     </>
   );
 }

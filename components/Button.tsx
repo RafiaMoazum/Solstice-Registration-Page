@@ -9,19 +9,20 @@ const Button = styled.a<ButtonProps>`
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  background: ${(p) => (p.transparent ? 'transparent' : 'rgb(var(--primary))')};
+  background: ${(p) => (p.transparent ? 'transparent' : '#50C5B7')};
   padding: 1.75rem 2.25rem;
   font-size: 1.2rem;
-  color: ${(p) => (p.transparent ? 'rgb(var(--text))' : 'rgb(var(--textSecondary))')};
+  color: ${(p) => (p.transparent ? 'rgb(var(--text))' : '#000000')};
   text-transform: uppercase;
   font-family: var(--font);
   font-weight: bold;
   border-radius: 0.4rem;
-  border: ${(p) => (p.transparent ? 'none' : '2px solid rgb(var(--primary))')};
+  border: ${(p) => (p.transparent ? 'none' : '2px solid #50C5B7')};
   transition: transform 0.3s;
-  backface-visibility: hidden;
-  will-change: transform;
+   -webkit-font-smoothing: antialiased; /* Improves text clarity */
+  -moz-osx-font-smoothing: grayscale;
   cursor: pointer;
+
 
   span {
     margin-left: 2rem;
